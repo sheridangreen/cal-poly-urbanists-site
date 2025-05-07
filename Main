@@ -22,7 +22,7 @@
     body {
       margin: 0;
       font-family: 'Open Sans', sans-serif;
-      font-size: 17px;
+      font-size: 16px;
       color: var(--body-text);
       background-color: #ffffff;
       line-height: 1.6;
@@ -59,13 +59,14 @@
     }
 
     section {
-      padding: 2.5rem 1.5rem;
-      max-width: 1000px;
-      margin: auto;
+      padding: 2rem;
+      max-width: 960px;
+      margin: 0 auto;
+      background-color: #fff;
     }
 
     section h2 {
-      font-size: 28px;
+      font-size: 24px;
       font-weight: 700;
       color: var(--heading-3);
       border-bottom: 2px solid var(--primary-green);
@@ -74,14 +75,14 @@
     }
 
     article h3 {
-      font-size: 22px;
+      font-size: 20px;
       font-weight: 600;
       color: var(--heading-3);
       margin-top: 1.5rem;
     }
 
     p {
-      font-size: 17px;
+      font-size: 16px;
       line-height: 1.6;
       margin-bottom: 1rem;
     }
