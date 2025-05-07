@@ -7,26 +7,32 @@
   <link rel="stylesheet" href="styles.css" />
   <style>
     :root {
-      --primary-green: #006a4e;
-      --light-bg: #ffffff;
-      --text-color: #333;
+      --primary-green: #56694E;
+      --secondary-green: #769469;
+      --heading-1: #71313B;
+      --heading-2: #B0925D;
+      --heading-3: #AD5C60;
+      --body-text: #434343;
     }
 
     body {
       margin: 0;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      color: var(--text-color);
-      background-color: var(--light-bg);
-      line-height: 1.6;
+      font-family: 'Open Sans', sans-serif;
+      font-size: 17px;
+      color: var(--body-text);
+      background-color: #ffffff;
+      line-height: 1.4;
+      text-align: left;
     }
 
     header {
+
       background-color: var(--primary-green);
       color: white;
       padding: 1.5rem;
       text-align: center;
-    }
-
+    
+  
     nav ul {
       list-style: none;
       padding: 0;
@@ -55,13 +61,22 @@
     }
 
     section h2 {
-      color: var(--primary-green);
+      font-size: 25px;
+      font-weight: bold;
+      color: #AD5C60;
       border-bottom: 2px solid var(--primary-green);
       padding-bottom: 0.5rem;
     }
 
-    article {
-      margin-bottom: 1.5rem;
+    article h3 {
+      font-size: 19px;
+      font-weight: bold;
+      color: #AD5C60;
+    }
+
+    p {
+      font-size: 17px;
+      line-height: 1.4;
     }
 
     footer {
@@ -73,7 +88,11 @@
     }
 
     a {
-      color: var(--primary-green);
+      color: #0000EE;
+    }
+
+    a:visited {
+      color: #551A8B;
     }
 
     a:hover {
@@ -83,7 +102,10 @@
 </head>
 <body>
   <header>
-    <h1>Cal Poly Urbanists</h1>
+    <div style="display: flex; align-items: center; justify-content: center; gap: 1rem; flex-wrap: wrap;">
+      <img src="cpnulogo.png" alt="Cal Poly Urbanists Logo" style="max-width: 120px; height: auto;">
+      <h1 style="margin: 0;">Cal Poly Urbanists</h1>
+    </div>
     <nav>
       <ul>
         <li><a href="#about">About Us</a></li>
@@ -96,24 +118,112 @@
   </header>
 
   <section id="about">
-    <h2>About Us</h2>
-    <p>Cal Poly Urbanists is a student-led city planning activist club dedicated to improving pedestrian and bicycle infrastructure on campus and in San Luis Obispo.</p>
-  </section>
+  <h2>About Us</h2>
+  <p>Cal Poly Urbanists is a student-led city planning activist club dedicated to improving pedestrian and bicycle infrastructure on campus and in San Luis Obispo.</p>
+  <p><strong>Mission Statement:</strong> We are looking to promote the real world application of planning principles in order to empower Cal Poly students to enact the change they wish to seek. We emphasize the importance of diversity, equity, and inclusion as inseparable from the planning process and we practice thorough community engagement through our activism.</p>
+  <div style="display: flex; flex-wrap: wrap; gap: 2rem; margin-top: 2rem;">
+    <div style="flex: 1 1 200px; text-align: center;">
+      <img src="president.jpg" alt="President Sheridan Green" style="width: 200px; height: 200px; border-radius: 50%; object-fit: cover;"><br>
+      <strong>President:</strong> Sheridan Green
+    </div>
+    <div style="flex: 1 1 200px; text-align: center;">
+      <img src="vp.jpg" alt="Vice President Collin Parker" style="width: 200px; height: 200px; border-radius: 50%; object-fit: cover;"><br>
+      <strong>Vice President:</strong> Collin Parker
+    </div>
+    <div style="flex: 1 1 200px; text-align: center;">
+      <img src="outreach.jpg" alt="Outreach Owen Mueller" style="width: 200px; height: 200px; border-radius: 50%; object-fit: cover;"><br>
+      <strong>Outreach:</strong> Owen Mueller
+    </div>
+    <div style="flex: 1 1 200px; text-align: center;">
+      <img src="pr.jpg" alt="Public Relations Emma Roeller" style="width: 200px; height: 200px; border-radius: 50%; object-fit: cover;"><br>
+      <strong>Public Relations:</strong> Emma Roeller
+    </div>
+    <div style="flex: 1 1 200px; text-align: center;">
+      <img src="treasurer.jpg" alt="Treasurer Owen Taylor" style="width: 200px; height: 200px; border-radius: 50%; object-fit: cover;"><br>
+      <strong>Treasurer:</strong> Owen Taylor
+    </div>
+    <div style="flex: 1 1 200px; text-align: center;">
+      <img src="social.jpg" alt="Social Isabel Caton" style="width: 200px; height: 200px; border-radius: 50%; object-fit: cover;"><br>
+      <strong>Social:</strong> Isabel Caton
+    </div>
+    <div style="flex: 1 1 200px; text-align: center;">
+      <img src="secretary.jpg" alt="Secretary Wes Swanson" style="width: 200px; height: 200px; border-radius: 50%; object-fit: cover;"><br>
+      <strong>Secretary:</strong> Wes Swanson
+    </div>
+    <div style="flex: 1 1 200px; text-align: center;">
+      <img src="pm.jpg" alt="Project Manager Haley Esbeck" style="width: 200px; height: 200px; border-radius: 50%; object-fit: cover;"><br>
+      <strong>Project Manager:</strong> Haley Esbeck
+    </div>
+    <div style="flex: 1 1 200px; text-align: center;">
+      <img src="freshman.jpg" alt="Freshman Rep Renee Ortiz" style="width: 200px; height: 200px; border-radius: 50%; object-fit: cover;"><br>
+      <strong>Freshman Rep:</strong> Renee Ortiz
+    </div>
+  </div>
+</section>
 
   <section id="projects">
-    <h2>Projects & Initiatives</h2>
-    <article>
-      <h3>Taft Street Proposal</h3>
-      <p>Details about the Taft Street Proposal project.</p>
-    </article>
-    <article>
-      <h3>Placemaking Design Competition</h3>
-      <p>Information about the competition launched in collaboration with SCASLA.</p>
-    </article>
-    <article>
-      <h3>Jane Jacobs Walk</h3>
-      <p>Overview of the annual Jane Jacobs Walk focusing on historic preservation.</p>
-    </article>
+  <h2>Projects & Initiatives</h2>
+  <p>Explore our portfolio of student-led urban design and planning projects. Each initiative reflects our commitment to creating safer, more accessible, and community-centered spaces at Cal Poly and in San Luis Obispo. Learn how our members use research, public engagement, and policy analysis to drive real change in the built environment.</p>
+  <article>
+    <h3>Taft Street Proposal</h3>
+    <p>Taft Street is a critical pedestrian corridor that connects Cal Poly students and local residents to businesses like Parliament Deli, Ziggy's, and others just beyond the campus boundary. Despite its popularity, the street currently lacks crosswalks, traffic calming infrastructure, and adequate lighting-conditions that contribute to serious safety concerns for pedestrians and cyclists alike.</p>
+    <p>Cal Poly Urbanists conducted extensive research and outreach to analyze conditions, traffic data, and user experiences. Based on this, we propose the installation of a <strong>raised crosswalk</strong> near the southern retail plaza. This will serve as both a visual and physical traffic calming measure and improve pedestrian visibility. We also recommend adding <strong>rectangular rapid flashing beacons</strong> and new signage to notify drivers of pedestrian activity, especially near freeway on/off ramps.</p>
+    <p>The proposal aligns with upcoming city plans for a roundabout at Taft and California, and provides an opportunity to integrate pedestrian-friendly infrastructure in advance of that project. Outreach to business owners highlighted support for safety improvements, particularly to protect employees and customers who regularly cross mid-block due to convenience and visibility concerns.</p>
+    <div style="text-align:center; margin-top: 1rem;">
+      <img src="taft-crosswalk-rendering.jpg" alt="Rendering of Raised Crosswalk on Taft Street" style="max-width: 100%; height: auto; margin-bottom: 1rem;">
+      <img src="taft-collision-data.jpg" alt="Collision Data Chart for Taft Street" style="max-width: 100%; height: auto;">
+    </div>
+  </article>
+  <article>
+    <h3>Via Carta and South Perimeter Road Proposal</h3>
+    <p>This proposal addresses one of the busiest multimodal intersections on campus-where Via Carta meets South Perimeter Road near the Rec Center and Shake Smart. Through site visits, surveys, and circulation mapping, CPU identified critical issues including conflict between pedestrians, cyclists, and vehicles, inadequate infrastructure to support peak flows, and poor alignment of paths with actual user behavior.</p>
+    <p>Our goals for this proposal include:</p>
+    <ul>
+      <li>Creating continuous, safe, and clearly defined paths for all users</li>
+      <li>Integrating a flat roundabout to simplify movement and reduce conflicts</li>
+      <li>Enhancing bike infrastructure to match observed desire paths</li>
+      <li>Improving lighting, signage, and street furniture to elevate safety and comfort</li>
+    </ul>
+    <p>Survey feedback revealed widespread frustration from students who felt unsafe or confused navigating the space. Pedestrians cited feeling deprioritized, and cyclists often deviated from existing bike lanes due to impractical geometry. Our design addresses these tensions by creating legible spaces and reducing ambiguity in travel behavior.</p>
+    <div style="text-align:center; margin-top: 1rem;">
+      <img src="via-carta-map.jpg" alt="Map of Via Carta and South Perimeter Site" style="max-width: 100%; height: auto; margin-bottom: 1rem;">
+      <img src="via-carta-workshop.jpg" alt="Circulation Workshop Output" style="max-width: 100%; height: auto;">
+    </div>
+  </article>
+  <article>
+    <h3>Placemaking Design Competition</h3>
+    <p>In collaboration with the Student Chapter of the American Society of Landscape Architects (SCASLA), Cal Poly Urbanists launched a Placemaking Design Competition aimed at revitalizing the corridor outside Engineering West. This initiative emphasized interdisciplinary collaboration and student-led design, focusing on enhancing accessibility, seating, lighting, and incorporating art through placemaking strategies.</p>
+    <p>The competition served as a platform for students to apply real-world planning principles, fostering a sense of community and engagement within the campus environment. The project not only aimed to improve the physical space but also to inspire similar initiatives at other institutions.</p>
+    <div style="text-align:center; margin-top: 1rem;">
+      <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/CpUrb4xJk2A/" data-instgrm-version="14" style="width:100%; max-width:540px; margin:0 auto;"></blockquote>
+      <script async src="//www.instagram.com/embed.js"></script>
+    </div>
+  </article>
+  <article>
+    <h3>Jane Jacobs Walk</h3>
+    <p>Each year, Cal Poly Urbanists organizes a Jane Jacobs Walk to celebrate the life and ideas of one of the most influential urban thinkers. These walks are designed to engage students and community members in observing, discussing, and reimagining the urban environment of San Luis Obispo. By walking through neighborhoods, participants reflect on themes such as community connectivity, historic preservation, pedestrian safety, and inclusive urban design. The walks foster civic dialogue, promote awareness of urban planning issues, and encourage participants to envision a more walkable, livable city.</p>
+    <div style="text-align:center; margin-top: 1rem;">
+      <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/C6XyZ3JvL9A/" data-instgrm-version="14" style="width:100%; max-width:540px; margin:0 auto;"></blockquote>
+      <script async src="//www.instagram.com/embed.js"></script>
+    </div>
+  </article>
+<article>
+    <h3>Cal Poly Climate Action Plan Update</h3>
+    <p>As part of Cal Poly's Climate Action Plan update, Cal Poly Urbanists collaborated with City and Regional Planning master’s students to conduct campus-wide community outreach. We engaged with students to identify problem areas and opportunities for improvement in pedestrian and bicycle infrastructure. The outcome of this collaborative process was this detailed map of infrastructure feedback, which was ultimately included in the official Cal Poly Climate Action Plan publication.</p>
+    <div style="text-align:center; margin-top: 1rem;">
+      <img src="41b84977-b3e8-44fb-b1ce-c84928fe8a67.png" alt="Cal Poly Climate Action Map" style="max-width: 100%; height: auto;">
+    </div>
+  </article>
+
+  </section>
+
+  <section id="speakers-tours">
+    <h2>Tours & Guest Speakers</h2>
+    <p>Over the years, Cal Poly Urbanists has hosted a variety of engaging guest speakers and educational tours to enrich our members' understanding of urban planning. These events connect students with professionals and practitioners in the field, providing real-world insight into urban development, advocacy, and community planning. Notable highlights include walking tours of downtown San Luis Obispo led by city planners, guest talks from YIMBY organizers, and panel discussions with local transportation and housing experts.</p>
+    <div style="text-align:center; margin-top: 1rem;">
+      <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/C6AxN36PrG8/" data-instgrm-version="14" style="width:100%; max-width:540px; margin:0 auto;"></blockquote>
+      <script async src="//www.instagram.com/embed.js"></script>
+    </div>
   </section>
 
   <section id="toolkit">
@@ -122,18 +232,22 @@
   </section>
 
   <section id="events">
-    <h2>Events</h2>
-    <p>Stay updated with our upcoming and past events.</p>
-  </section>
+  <h2>Events</h2>
+  <p>Stay updated with our upcoming and past events through our public Google Calendar.</p>
+  <div style="overflow-x:auto; text-align:center;">
+    <iframe src="https://calendar.google.com/calendar/embed?src=cpurbanists%40gmail.com&ctz=America%2FLos_Angeles" style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+  </div>
+</section>
 
   <section id="contact">
     <h2>Contact Us</h2>
-    <p>Email: your-email@calpoly.edu</p>
+    <p>Email: <a href="mailto:cpurbanists@gmail.com">cpurbanists@gmail.com</a></p>
     <p>Follow us on <a href="https://www.instagram.com/cpurbanists" target="_blank">Instagram</a></p>
   </section>
 
   <footer>
     <p>&copy; 2025 Cal Poly Urbanists</p>
+    
   </footer>
 </body>
 </html>
